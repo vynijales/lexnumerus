@@ -5,12 +5,10 @@
     right: 3rem;
     position: fixed;
     text-decoration: none;
-    opacity: 0.8;
     animation: pulse 2s infinite;
   
     & :hover {
       transform: scale(1.2);
-      opacity: 1.0;
     }
     & img {
       width: 100%;

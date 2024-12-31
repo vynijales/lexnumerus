@@ -58,10 +58,10 @@ footer {
   align-items: center;
   gap: 1rem;
   color: #fff;
+  text-align: center;
   /* transition: all 5s ease-out; */
 
   & h2 {
-    width: max-content;
     background-color: #272434bc;
     backdrop-filter: blur(10px);
 
@@ -71,7 +71,7 @@ footer {
     padding: 0.5rem;
   }
   & p {
-    width: max-content;
+    /* width: max-content; */
     background-color: #2724345c;
     backdrop-filter: blur(10px);
     font-size: 1.2rem;
@@ -81,12 +81,13 @@ footer {
 
 .section-2 {
   display: flex;
-  max-width: 768px;
+  max-width: 100%;
   padding: 1rem;
-  transition: all 2s ease-out;
+  /* transition: all 2s ease-out; */
 
   img {
-    width: 50%;
+    max-height: 420px;
+    /* width: 50%; */
     object-fit: contain;
   }
 

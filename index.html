@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="imagex/png" href="/static/imgs/logo-cortada.jpg">
+
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
@@ -16,6 +18,49 @@
     <link rel="stylesheet" href="static/style/floating-button.css" />
     <title>LexNumerus</title>
   </head>
+  <style>
+    .section-2 {
+      & a {
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        padding: 1rem;
+        transition: all 0.35s;
+      }
+
+      & a span {
+        position: relative;
+        z-index: 2;
+      }
+
+      & a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #23ac23;
+        transition: all 0.35s;
+      }
+
+      & a:hover {
+        color: #fff;
+      }
+
+      & a:hover:after {
+        width: 100%;
+      }
+    }
+  </style>
   <body>
     <header>
       <h1>LexNumerus</h1>
@@ -34,6 +79,11 @@
             trabalharam por anos nas contadorias dos Juízos das varas Federais,
             do Trabalho e Cíveis.
           </p>
+          <a
+            href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20mais%20informações."
+            target="_blank"
+            ><span>Entre em contato</span></a
+          >
         </div>
       </section>
       <section class="section-3">
@@ -72,7 +122,7 @@
           <div class="column">
             <div class="card">
               <img src="/static/imgs/label.svg" />
-              <h3>CONSUMO</h3>
+              <h3>DIREITO DO CONSUMIDOR</h3>
               <p>
                 Toda e qualquer revisão contratual, seja de contrato bancário,
                 consórcio, cartão de crédito, alienação fiduciária,
@@ -96,7 +146,7 @@
           <!-- anexos -->
           <input type="file" multiple />
           <button type="submit">
-            <img src="static/imgs/enviar.svg" alt="">
+            <img src="static/imgs/enviar.svg" alt="" />
             Enviar Mensagem
           </button>
         </form>
