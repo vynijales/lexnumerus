@@ -1,0 +1,36 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem;
+  text-align: center;
+  max-height: 360px;
+
+  &:hover {
+    max-height: none;
+  }
+
+  & h3 {
+    margin: 0.8rem 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #bfa980;
+  }
+
+  & p {
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 0.8rem;
+  }
+
+  &:hover p {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
+
+  & img {
+    max-width: 6rem;
+  }
+}
