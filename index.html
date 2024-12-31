@@ -41,7 +41,7 @@
             do Trabalho e Cíveis.
           </p>
           <a
-            href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20mais%20informações."
+            href="https://wa.me/5584992242741?text=Olá!%20Gostaria%20de%20mais%20informações."
             target="_blank"
             ><span>Entre em contato</span></a
           >
@@ -99,23 +99,26 @@
       </section>
       <section class="section-4">
         <h2>Entre em Contato</h2>
-        <form action="">
-          <input type="text" placeholder="Insira seu nome completo" />
-          <input type="email" placeholder="Insira seu e-mail" />
-          <input type="text" placeholder="Assunto da mensagem" />
-          <textarea placeholder="Escreva sua mensagem aqui"></textarea>
-          <!-- anexos -->
-          <input type="file" multiple />
-          <button type="submit">
-            <img src="static/imgs/enviar.svg" alt="" />
-            Enviar Mensagem
-          </button>
+        <form id="contactForm" enctype="text/plain">
+          <input name="nome" type="text" placeholder="Insira seu nome completo"/>
+          <input name="assunto" type="text" placeholder="Assunto da mensagem" />
+          <textarea name="mensagem" placeholder="Escreva sua mensagem aqui" rows="6"></textarea>
+          <button
+          id="sendEmailLink"
+          name="send-email"
+          type="button"
+          onclick="sendEmail()"
+        >
+          <img src="static/imgs/enviar.svg" />
+          Enviar Mensagem
+        </button>
+          
         </form>
       </section>
       <a
         class="floating-button"
         alt="Entrar em contato via e-mail"
-        href="https://wa.me/558494546034"
+        href="https://wa.me/5584992242741?text=Olá!%20Gostaria%20de%20mais%20informações."
         target="_blank"
       >
         <img
@@ -144,6 +147,6 @@
       </div>
     </footer>
 
-    <script></script>
+    <script src="static/js/scripts.js"></script>
   </body>
 </html>

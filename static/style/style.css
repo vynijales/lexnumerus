@@ -253,13 +253,14 @@ footer {
   align-items: center;
   padding: 4rem;
   gap: 4rem;
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 100%;
+  width: clamp(50%, 80%, 620px);
   margin: 0 auto;
 
   & input,
@@ -271,6 +272,7 @@ form {
   }
 
   & button {
+    text-decoration: none;
     padding: 10px;
     background: #34495e;
     color: white;
@@ -290,5 +292,14 @@ form {
 
   & button:hover {
     background: #2c3e50;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    max-width: none;
+    min-width: none;
+
   }
 }
