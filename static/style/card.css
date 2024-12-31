@@ -2,7 +2,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem 1rem;
   text-align: center;
-  max-height: 360px;
+  height: 420px;
 
   &:hover {
     max-height: none;
@@ -20,14 +20,14 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 16;
     -webkit-box-orient: vertical;
     font-size: 0.8rem;
   }
 
   &:hover p {
-    -webkit-line-clamp: unset;
-    overflow: visible;
+    /* -webkit-line-clamp: unset;
+    overflow: visible; */
   }
 
   & img {
